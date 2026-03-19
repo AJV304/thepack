@@ -43,7 +43,7 @@ outlier <- function(df, dep){
   y <- df.ex.cook[[dep]]
   reg.ex.cook <- lm(y~x, data = df.ex.cook)
   outlier.stat[2,] <- extr(model = reg.ex.cook)
-  outlier.stat$condition[2] <- "Cook's"
+  outlier.stat$condition[2] <- "Cook's distance"
 
   #return the statistics as output
   return(outlier.stat)
