@@ -19,7 +19,7 @@ nsig <- function(df){
     condition <- df %>% filter(condition == conditions[i])
 
     #count the number of significant p-values
-    sig <- condition %>% filter(p.value < 0.5)
+    sig <- condition %>% filter(p.value < 0.05)
     out[i, "n.sig"] <- nrow(sig)
 
     #save the number of significant values as a percentage of that condition
