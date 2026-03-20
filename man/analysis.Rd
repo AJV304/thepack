@@ -4,7 +4,7 @@
 \alias{analysis}
 \title{Overarching function (generates data, runs each condition, extracts stats)}
 \usage{
-analysis(iter, n, b0, b1, b_z, b_d, dep)
+analysis(iter, n, b0, b1, b_z, b_d)
 }
 \arguments{
 \item{iter}{Number of iterations}
@@ -18,8 +18,6 @@ analysis(iter, n, b0, b1, b_z, b_d, dep)
 \item{b_z}{Continuous covariate effect coefficient}
 
 \item{b_d}{Dichotomous covariate effect coefficient}
-
-\item{dep}{The dependent variable ("y_yes" or "y_no")}
 }
 \value{
 b1, p-value and confidence interval for baseline and each deviation
