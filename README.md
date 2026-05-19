@@ -9,7 +9,7 @@ The goal of this package is to simulate data according to the specific data-gene
 - `outlier.R`: This function analyses a dataset (one generated using the dgm function) based on the two Outlier Exclusion Criteria deviation conditions.
 - `models.R`: This function analyses a dataset (one generated using the dgm function) based on the three Statistical Model deviation conditions.
 - `conditions.R`: This function runs `baseline.R`, `samplesize.R`, `outlier.R`, and `models.R` simultaneously.
-- `analysis.R`: This fucntion generates data using the `dgm.R` and analyzes it for all conditions using `conditions.R`, combining the output into one dataframe.
+- `analysis.R`: This function generates data using the `dgm.R` and analyzes it for all conditions using `conditions.R`, combining the output into one dataframe.
 - `choice.R`: This function selects one condition per iteration (from a dataframe as output by `analysis.R`), based on whether p-values are significant or not.
 - `nsig.R`: This function counts the number of significant p-values per condition (from a dataframe as output by `analysis.R`).
 
