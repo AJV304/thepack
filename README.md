@@ -11,3 +11,5 @@ The goal of this package is to simulate data according to the specific data-gene
 - `conditions.R`: This function runs `baseline.R`, `samplesize.R`, `outlier.R`, and `models.R` simultaneously and combines their outputs into one dataframe.
 - `choice.R`: This function selects one condition per iteration (from a dataframe as output by `conditions.R`), based on whether p-values are significant or not.
 - `nsig.R`: This function counts the number of significant p-values per condition (from a dataframe as output by `conditions.R`).
+
+This package is licensed under the MIT License. This license allows anyone to use, modify, and distribute this code freely, as long as the original copyright notice and license text are retained. For more information, see LICENSE.
