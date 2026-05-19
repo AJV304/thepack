@@ -8,8 +8,9 @@ The goal of this package is to simulate data according to the specific data-gene
 - `outlier.R`: This function analyses a dataset (one generated using the dgm function) based on the two Outlier Exclusion Criteria deviation conditions.
 - `models.R`: This function analyses a dataset (one generated using the dgm function) based on the three Statistical Model deviation conditions.
 - `extr.R`: This function extracts the regression coefficient b1, the p-value and the confidence interval from an lm() model summary.
-- `conditions.R`: This function runs `baseline.R`, `samplesize.R`, `outlier.R`, and `models.R` simultaneously and combines their outputs into one dataframe.
-- `choice.R`: This function selects one condition per iteration (from a dataframe as output by `conditions.R`), based on whether p-values are significant or not.
-- `nsig.R`: This function counts the number of significant p-values per condition (from a dataframe as output by `conditions.R`).
+- `conditions.R`: This function runs `baseline.R`, `samplesize.R`, `outlier.R`, and `models.R` simultaneously.
+- `analysis.R`: This fucntion generates data using the `dgm.R` and analyzes it for all conditions using `conditions.R`, combining the output into one dataframe.
+- `choice.R`: This function selects one condition per iteration (from a dataframe as output by `analysis.R`), based on whether p-values are significant or not.
+- `nsig.R`: This function counts the number of significant p-values per condition (from a dataframe as output by `analysis.R`).
 
 This package is licensed under the MIT License. This license allows anyone to use, modify, and distribute this code freely, as long as the original copyright notice and license text are retained. For more information, see [LICENSE](https://github.com/AJV304/thepack/blob/751e0530e4082e49da51b1e73a5f0b3710a0b3f3/LICENSE).
